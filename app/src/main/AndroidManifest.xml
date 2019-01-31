@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amitc.pvrathome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".movies_tab"/>
+
+        <activity android:name=".series_tab" />
+        <activity android:name=".specials_tab" />
+        <activity android:name=".music_tab" />
+        <activity android:name=".favorite_tab" />
+        <activity android:name=".downloaded_tab" />
+        <activity android:name=".settings_tab" />
+        <activity android:name=".request_tab" />
+
+        <activity android:name=".msms">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@layout/searchable"/>
+        </activity>
+
+
+        <provider
+            android:name=".CitySuggestionProvider"
+            android:authorities="ngvl.android.demosearch.citysuggestion"
+            android:enabled="true"
+            android:exported="true"/>
+
+    </application>
+
+
+
+</manifest>

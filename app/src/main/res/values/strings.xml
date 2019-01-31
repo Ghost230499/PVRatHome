@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PVR@Home</string>
+    <string name="home">Home</string>
+    <string name="url1">https://www.dropbox.com/s/45xopes03s1iyse/Movie.json?dl=1</string>
+
+    <string-array name="players">
+        <item>MX Player</item>
+        <item>VLC Player</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="quality">
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+
+
+    <string-array name="requests">
+        <item>Movie(s)</item>
+        <item>Series</item>
+        <item>Song/Album</item>
+    </string-array>
+
+</resources>

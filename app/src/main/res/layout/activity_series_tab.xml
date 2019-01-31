@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".series_tab"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="SERIES" />
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="-3.5dp"
+        android:layout_marginRight="-3.5dp"
+        android:background="@drawable/barsa">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/movies_light"
+            android:id="@+id/movie_button"
+            android:layout_weight="1"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="7.5dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_weight="1"
+            android:src="@drawable/series_dark"
+            android:id="@+id/series_button" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/specials_light"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:id="@+id/specials_button" />
+
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="57dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dp"
+            android:src="@drawable/home_light"
+            android:elevation="10dp"
+            android:layout_marginBottom="29sp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/music_light"
+            android:id="@+id/actors_button"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginRight="3.5dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/favourite_light"
+            android:id="@+id/favorites_button"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginRight="3.5dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_height="50dp"
+            android:src="@drawable/downloads_light"
+            android:id="@+id/downloads_button" />
+    </LinearLayout>
+
+</LinearLayout>
